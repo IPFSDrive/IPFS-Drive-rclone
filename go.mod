@@ -13,6 +13,7 @@ require (
 	github.com/a8m/tree v0.0.0-20210414114729-ce3525c5c2ef
 	github.com/aalpar/deheap v0.0.0-20200318053559-9a0c2883bd56
 	github.com/abbot/go-http-auth v0.4.0
+	github.com/alanshaw/go-carbites v0.3.0
 	github.com/anacrolix/dms v1.2.2
 	github.com/atotto/clipboard v0.1.4
 	github.com/aws/aws-sdk-go v1.40.27
@@ -25,6 +26,7 @@ require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.1 // indirect
 	github.com/dop251/scsu v0.0.0-20200422003335-8fadfb689669
 	github.com/dropbox/dropbox-sdk-go-unofficial v1.0.1-0.20210114204226-41fdcdae8a53
+	github.com/filecoin-project/go-address v0.0.6
 	github.com/form3tech-oss/jwt-go v3.2.5+incompatible // indirect
 	github.com/gabriel-vasile/mimetype v1.3.1
 	github.com/go-chi/chi/v5 v5.0.3
@@ -33,6 +35,25 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/hanwen/go-fuse/v2 v2.1.0
 	github.com/iguanesolutions/go-systemd/v5 v5.1.0
+	github.com/ipfs/go-blockservice v0.1.7
+	github.com/ipfs/go-cid v0.1.0
+	github.com/ipfs/go-datastore v0.4.6
+	github.com/ipfs/go-fetcher v1.5.0
+	//github.com/ipfs/go-ipfs v0.10.0
+	github.com/ipfs/go-ipfs-blockstore v1.0.4
+	github.com/ipfs/go-ipfs-chunker v0.0.5
+	github.com/ipfs/go-ipfs-files v0.0.8
+	github.com/ipfs/go-ipfs-posinfo v0.0.1
+	github.com/ipfs/go-ipld-format v0.2.0
+	github.com/ipfs/go-merkledag v0.4.1
+	github.com/ipfs/go-mfs v0.1.3-0.20210507195338-96fbfa122164
+	github.com/ipfs/go-path v0.1.2
+	github.com/ipfs/go-unixfs v0.2.6
+	github.com/ipfs/go-unixfsnode v1.1.3
+	github.com/ipfs/ipfs-cluster v0.14.1
+	github.com/ipld/go-car v0.3.1
+	github.com/ipld/go-codec-dagpb v1.3.0
+	github.com/ipld/go-ipld-prime v0.12.3
 	github.com/jcmturner/gokrb5/v8 v8.4.2
 	github.com/jlaffaye/ftp v0.0.0-20210307004419-5d4190119067
 	github.com/jzelinskie/whirlpool v0.0.0-20201016144138-0675e54bb004
@@ -40,8 +61,8 @@ require (
 	github.com/klauspost/compress v1.13.4
 	github.com/koofr/go-httpclient v0.0.0-20200420163713-93aa7c75b348
 	github.com/koofr/go-koofrclient v0.0.0-20190724113126-8e5366da203a
+	github.com/libp2p/go-libp2p-core v0.9.0
 	github.com/mattn/go-colorable v0.1.8
-	github.com/mattn/go-isatty v0.0.13 // indirect
 	github.com/mattn/go-runewidth v0.0.13
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/ncw/go-acd v0.0.0-20201019170801-fe55f33415b1
@@ -69,7 +90,6 @@ require (
 	github.com/yunify/qingstor-sdk-go/v3 v3.2.0
 	go.etcd.io/bbolt v1.3.6
 	go.uber.org/atomic v1.9.0 // indirect
-	go.uber.org/multierr v1.7.0 // indirect
 	go.uber.org/zap v1.19.0 // indirect
 	goftp.io/server v0.4.1
 	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5
