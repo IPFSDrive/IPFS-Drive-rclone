@@ -4,6 +4,7 @@ import (
 	"context"
 	"net"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 
@@ -179,6 +180,11 @@ func NewConfig() *ConfigInfo {
 		if arg == "--log-level=DEBUG" || (arg == "--log-level" && len(os.Args) > argIndex+1 && os.Args[argIndex+1] == "DEBUG") {
 			c.LogLevel = LogLevelDebug
 		}
+		if strings.HasPrefix(arg, "--verbose=") {
+			if level, err := strconv.Atoi(arg[10:]); err == nil && level >= 2 {
+				c.LogLevel = LogLevelDebug
+			}
+		}
 	}
 	envValue, found := os.LookupEnv("RCLONE_LOG_LEVEL")
 	if found && envValue == "DEBUG" {
@@ -237,11 +243,11 @@ func AddConfig(ctx context.Context) (context.Context, *ConfigInfo) {
 	return newCtx, cCopy
 }
 
-// ConfigToEnv converts a config section and name, e.g. ("myremote",
+// ConfigToEnv converts a config section and name, e.g. ("my-remote",
 // "ignore-size") into an environment name
-// "RCLONE_CONFIG_MYREMOTE_IGNORE_SIZE"
+// "RCLONE_CONFIG_MY-REMOTE_IGNORE_SIZE"
 func ConfigToEnv(section, name string) string {
-	return "RCLONE_CONFIG_" + strings.ToUpper(strings.Replace(section+"_"+name, "-", "_", -1))
+	return "RCLONE_CONFIG_" + strings.ToUpper(section+"_"+strings.Replace(name, "-", "_", -1))
 }
 
 // OptionToEnv converts an option name, e.g. "ignore-size" into an
