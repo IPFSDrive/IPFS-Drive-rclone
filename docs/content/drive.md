@@ -1225,7 +1225,7 @@ Use the -i flag to see what would be copied before copying.
 
 Drive has quite a lot of rate limiting.  This causes rclone to be
 limited to transferring about 2 files per second only.  Individual
-files may be transferred much faster at 100s of MiByte/s but lots of
+files may be transferred much faster at 100s of MiB/s but lots of
 small files can take a long time.
 
 Server side copies are also subject to a separate rate limit. If you
@@ -1328,6 +1328,9 @@ you using a GSuite account and click "Create". (the default name is fine)
 9. Go to "Oauth consent screen" and press "Publish App"
 
 10. Provide the noted client ID and client secret to rclone.
+
+9. Click "OAuth consent screen", then click "PUBLISH APP" button and 
+confirm, or add your account under "Test users".
 
 Be aware that, due to the "enhanced security" recently introduced by
 Google, you are theoretically expected to "submit your app for verification"

@@ -1,0 +1,57 @@
+GET http://bafybeigktpu32s6zxxn4patspyacuzocva3zg7lq6trsknuvgldibu6nba.ipfs.dweb.link
+Content-Type: application/car
+
+
+###
+#{
+#  "arg": "bafybeigktpu32s6zxxn4patspyacuzocva3zg7lq6trsknuvgldibu6nba"
+#}
+
+###
+POST http://dweb.link/api/v0/dag/export?arg=bafybeibw5ortdqpkq7yelb2dswwpmt22o56r273hw7ngxl3kdfpu4y4qey
+Content-Type: application/json
+
+###
+POST http://dweb.link/api/v0/dag/export?arg=bafybeibw5ortdqpkq7yelb2dswwpmt22o56r273hw7ngxl3kdfpu4y4qey
+Content-Type: application/json
+
+
+#####
+POST http://dweb.link/api/v0/dag/stat?arg=bafybeibw5ortdqpkq7yelb2dswwpmt22o56r273hw7ngxl3kdfpu4y4qey
+Content-Type: application/json
+
+#####
+POST http://dweb.link/api/v0/dag/resolve?arg=bafybeibw5ortdqpkq7yelb2dswwpmt22o56r273hw7ngxl3kdfpu4y4qey
+Content-Type: application/json
+
+
+#####
+POST http://dweb.link/api/v0/dag/stat?arg=bafybeialefw4rclvcgfmczgwo7fzdrfzzjm6cn7eejlhubm3h2he7lx7tu
+Content-Type: application/json
+
+
+
+#####
+POST http://dweb.link/api/v0/dag/resolve?arg=bafybeihid5o26dvu5q65sdeye2scq56kyxk6kequeobg7up3yj5qmu2you
+Content-Type: application/json
+
+#####
+POST http://dweb.link/api/v0/dag/get?arg=bafybeialefw4rclvcgfmczgwo7fzdrfzzjm6cn7eejlhubm3h2he7lx7tu
+Content-Type: application/json
+#####
+GET http://dweb.link/api/v0/dag/get?arg=bafkreihqxqu7zesffphkdirnyyvib6vd4auyvffvvn2gyyrltfczlml5su
+
+
+
+
+#####
+POST http://127.0.0.1:5001/api/v0/dag/get?arg=bafkreihqxqu7zesffphkdirnyyvib6vd4auyvffvvn2gyyrltfczlml5su
+Content-Type: application/json
+
+###
+POST http://ipfs.kxv.io/api/v0/dag/export
+Content-Type: application/json
+
+{
+  "arg": "bafybeigktpu32s6zxxn4patspyacuzocva3zg7lq6trsknuvgldibu6nba"
+}
