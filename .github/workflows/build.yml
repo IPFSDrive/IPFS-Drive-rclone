@@ -61,8 +61,8 @@ jobs:
             gotags: cmount
             build_flags: '-include "^windows/amd64" -cgo'
             build_args: '-buildmode exe'
-            quicktest: true
-            racequicktest: true
+            quicktest: false
+            racequicktest: false
             deploy: true
 
           - job_name: windows_386
